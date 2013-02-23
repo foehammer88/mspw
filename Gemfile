@@ -8,6 +8,7 @@ gem 'rails', '3.2.12'
 #gem 'sqlite3'
 
 gem 'couchdb', "~> 0.2.2"
+gem 'gcal4ruby', '~> 0.2.2'
 
 # Gems used only for assets and not required
 # in production environments by default.

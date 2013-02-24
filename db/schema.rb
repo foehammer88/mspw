@@ -11,7 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130224121849) do
+=======
+ActiveRecord::Schema.define(:version => 20130224105338) do
+>>>>>>> 7615bbc09bd868983ca4f6434f5f19ee04ac37d1
 
   create_table "analytics", :force => true do |t|
     t.string   "college"

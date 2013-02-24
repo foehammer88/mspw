@@ -1,7 +1,10 @@
 Myspiderweb::Application.routes.draw do
+<<<<<<< HEAD
   resources :events
 
 
+=======
+>>>>>>> 7615bbc09bd868983ca4f6434f5f19ee04ac37d1
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
   resources :users

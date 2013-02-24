@@ -1,5 +1,9 @@
 Myspiderweb::Application.routes.draw do
+  get "users/new"
+
   root to: 'static_pages#home'
+  
+  match '/signup',  to: 'users#new'
 
   match '/donate',    to: 'static_pages#donate'
   resources :games

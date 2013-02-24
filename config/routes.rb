@@ -1,12 +1,21 @@
 Myspiderweb::Application.routes.draw do
+<<<<<<< HEAD
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
+=======
+>>>>>>> 0c78b324aa2abdf9ab8539da3df02a41c1048084
 
   resources :users
+  resources :sessions, only: [:new, :create, :destroy]
 
   root to: 'static_pages#home'
   
   match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
 
+  match '/contact',    to: 'static_pages#contact'
+  match '/about',    to: 'static_pages#about'
+  
   match '/donate',    to: 'static_pages#donate'
   resources :games
 

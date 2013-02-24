@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  date: 2013-02-23 19:27:43
+  verified: false
+  completed: false
+
+two:
+  username: MyString
+  date: 2013-02-23 19:27:43
+  verified: false
+  completed: false

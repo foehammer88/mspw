@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  username: MyString
+  points: 1
+  level: 1
+  college: MyString
+  number_applications: 1
+  date: 2013-02-23
+  money: 9.99
+
+two:
+  username: MyString
+  points: 1
+  level: 1
+  college: MyString
+  number_applications: 1
+  date: 2013-02-23
+  money: 9.99

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130223230017) do
+ActiveRecord::Schema.define(:version => 20130224012134) do
 
   create_table "analytics", :force => true do |t|
     t.string   "college"
@@ -19,6 +19,36 @@ ActiveRecord::Schema.define(:version => 20130223230017) do
     t.integer  "amount_money"
     t.integer  "total_on_campus"
     t.date     "year"
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
+  end
+
+  create_table "appointments", :force => true do |t|
+    t.string   "username"
+    t.datetime "date"
+    t.boolean  "verified"
+    t.boolean  "completed"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "forms", :force => true do |t|
+    t.string   "name"
+    t.string   "type"
+    t.decimal  "amount"
+    t.string   "requirements"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "games", :force => true do |t|
+    t.string   "username"
+    t.integer  "points"
+    t.integer  "level"
+    t.string   "college"
+    t.integer  "number_applications"
+    t.date     "date"
+    t.decimal  "money"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end

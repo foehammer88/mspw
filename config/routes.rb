@@ -1,4 +1,13 @@
 Myspiderweb::Application.routes.draw do
+  resources :games
+
+
+  resources :forms
+
+
+  resources :appointments
+
+
   resources :analytics
 
 

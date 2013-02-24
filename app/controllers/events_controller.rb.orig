@@ -17,6 +17,7 @@ class EventsController < ApplicationController
 
   def destroy
 =======
+>>>>>>> 93d07eac912ab234ca1d77876567f237c43557f8
   # GET /events
   # GET /events.json
   def index
@@ -97,6 +98,5 @@ class EventsController < ApplicationController
       format.html { redirect_to events_url }
       format.json { head :no_content }
     end
->>>>>>> 93d07eac912ab234ca1d77876567f237c43557f8
   end
 end

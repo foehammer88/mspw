@@ -1,4 +1,5 @@
 class EventsController < ApplicationController
+<<<<<<< HEAD
   before_filter :signed_in_user, only: [:new, :destroy]
 
   def index
@@ -15,6 +16,8 @@ class EventsController < ApplicationController
   end
 
   def destroy
+=======
+>>>>>>> 93d07eac912ab234ca1d77876567f237c43557f8
   # GET /events
   # GET /events.json
   def index

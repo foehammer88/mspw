@@ -291,13 +291,6 @@ height: 140px ;
 .center hero-unit {
   overflow:hidden;
 }
-
-input, textarea, select,  {
-border: 1px solid #bbbbbb;
-width: 100%;
-padding:0px !important;
-margin-bottom: 15px;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+select{
+  padding: 0px !important;
 }

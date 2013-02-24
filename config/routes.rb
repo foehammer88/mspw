@@ -1,4 +1,7 @@
 Myspiderweb::Application.routes.draw do
+  resources :analytics
+
+
   resources :users
 
 

@@ -1,5 +1,6 @@
 Myspiderweb::Application.routes.draw do
   get "static_pages/explore"
+  resources :events
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
@@ -11,11 +12,11 @@ Myspiderweb::Application.routes.draw do
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-
+  match '/event',   to: 'events#new'
   match '/contact',    to: 'static_pages#contact'
   match '/about',    to: 'static_pages#about'
- 
   match '/explore',    to: 'static_pages#explore'
+  match '/calendar',   to: 'calendar#index'  
   match '/donate',    to: 'static_pages#donate'
   resources :games
 

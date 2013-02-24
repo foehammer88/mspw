@@ -20,6 +20,12 @@ class GamesController < ApplicationController
       format.json { render json: @game }
     end
   end
+  
+  def updateScore(uname, score)
+    @points = (Game.select(:points)).where(:username => uname) 
+    Game.update_attribute(:points, @points + score).where(:username => uname) 
+  end
+    
 
   # GET /games/new
   # GET /games/new.json

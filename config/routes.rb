@@ -1,10 +1,14 @@
 Myspiderweb::Application.routes.draw do
+
   resources :users
 
   root to: 'static_pages#home'
   
   match '/signup',  to: 'users#new'
 
+  match '/contact',    to: 'static_pages#contact'
+  match '/about',    to: 'static_pages#about'
+  
   match '/donate',    to: 'static_pages#donate'
   resources :games
 

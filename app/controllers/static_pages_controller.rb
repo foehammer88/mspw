@@ -13,4 +13,7 @@ class StaticPagesController < ApplicationController
 
   def newsroom
   end
+  def explore
+  end
+
 end

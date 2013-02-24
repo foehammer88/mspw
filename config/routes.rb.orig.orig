@@ -1,10 +1,10 @@
 Myspiderweb::Application.routes.draw do
 <<<<<<< HEAD
+  get "static_pages/explore"
+=======
+>>>>>>> fbd06765e0b06b7a3e1b27ddc2c3fd0cd3a848e5
   resources :events
 
-
-=======
->>>>>>> 7615bbc09bd868983ca4f6434f5f19ee04ac37d1
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
 
   resources :users
@@ -15,10 +15,14 @@ Myspiderweb::Application.routes.draw do
   match '/signup',  to: 'users#new'
   match '/signin',  to: 'sessions#new'
   match '/signout', to: 'sessions#destroy', via: :delete
-
+  match '/event',   to: 'events#new'
   match '/contact',    to: 'static_pages#contact'
   match '/about',    to: 'static_pages#about'
-  
+<<<<<<< HEAD
+  match '/explore',    to: 'static_pages#explore'
+=======
+>>>>>>> fbd06765e0b06b7a3e1b27ddc2c3fd0cd3a848e5
+  match '/calendar',   to: 'calendar#index'  
   match '/donate',    to: 'static_pages#donate'
   resources :games
 

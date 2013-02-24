@@ -1,41 +1,21 @@
-<div class="row">
-  <div class="span6 offset3">
 
 <%= form_for(@user) do |f| %>
   <%= render 'shared/error_messages' %>
 
-  <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email %>
     <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
+    <%= f.label :password %>
     <%= f.password_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :password_confirmation, "Confirmation" %><br />
+    <%= f.label :password_confirmation, "Confirmation" %>
     <%= f.password_field :password_confirmation %>
-  </div>
-  <div class="field">
-    <%= f.label :firstname %><br />
+    <%= f.label :firstname %>
     <%= f.text_field :firstname %>
-  </div>
-  <div class="field">
-    <%= f.label :lastname %><br />
+    <%= f.label :lastname %>
     <%= f.text_field :lastname %>
-  </div>
-  <div class="field">
-    <%= f.label :college %><br />
+    <%= f.label :college %>
     <%= f.text_field :college %>
-  </div>
-  <div class="field">
-    <%= f.label :address %><br />
+    <%= f.label :address %>
     <%= f.text_field :address %>
-  </div>
-  <div class="actions">
     <%= f.submit "Create my account", class: "btn btn-large btn-primary" %>
-  </div>
 <% end %>
 
- </div>
-</div>

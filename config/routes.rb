@@ -1,4 +1,8 @@
 Myspiderweb::Application.routes.draw do
+  get "/static_pages/home"
+
+  get "/static_pages/donate"
+
   resources :games
 
 

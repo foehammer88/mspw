@@ -1,4 +1,6 @@
 Myspiderweb::Application.routes.draw do
+  match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
+
   resources :users
 
   root to: 'static_pages#home'

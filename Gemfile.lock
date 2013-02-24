@@ -42,9 +42,9 @@ GEM
       execjs
     coffee-script-source (1.4.0)
     erubis (2.7.0)
+    event-calendar (2.3.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    gcal4ruby (0.2.11)
     hike (1.2.1)
     i18n (0.6.1)
     journey (1.0.4)
@@ -113,7 +113,7 @@ DEPENDENCIES
   bcrypt-ruby (= 3.0.1)
   bootstrap-sass (= 2.1)
   coffee-rails (~> 3.2.1)
-  gcal4ruby (~> 0.2.2)
+  event-calendar
   jquery-rails
   rails (= 3.2.12)
   sass-rails (~> 3.2.3)

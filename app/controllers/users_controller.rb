@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_filter :admin_user,     only: :destroy
 
   def index
-    @users = User.paginate(page: params[:page])
+    @users = User.all
   end
 
   def show
@@ -21,7 +21,8 @@ class UsersController < ApplicationController
     if @user.save
       sign_in @user
       flash[:success] = "Welcome to the Sample App!"
-      redirect_to @user
+      #redirect_to @user
+      render explore_path
     else
       render 'new'
     end

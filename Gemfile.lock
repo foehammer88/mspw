@@ -66,6 +66,7 @@ GEM
     event-calendar (2.3.3)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    facebook_share (0.0.6)
     factory_girl (4.1.0)
       activesupport (>= 3.0.0)
     factory_girl_rails (4.1.0)
@@ -197,6 +198,7 @@ DEPENDENCIES
   cucumber-rails (= 1.2.1)
   database_cleaner (= 0.7.0)
   event-calendar
+  facebook_share
   factory_girl_rails (= 4.1.0)
   faker (= 1.0.1)
   guard-rspec (= 1.2.1)

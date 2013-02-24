@@ -1,0 +1,24 @@
+<h1>News Room</h1>
+<div>
+<div class='floater'>
+  <h3>Personal Savings</h3>
+  <p>You have saved $5,650 this year!</p>
+  <p>Congratulations!  You have earned enough points to receive a voucher for an academic book on us!</p>
+  <p></p>
+
+</div>
+<div class='floater'>
+  <h3>Most Assisting Schools</h3>
+  <p>1. Miami-Dade	$8 million in 2012</p>
+  <p>2. MCC		$6 million in 2012</p>
+  <p>3. GCC		$5 million in 2012</p>
+</div>
+<div class='floater'>
+  <h3>Share with your friends!</h3>
+  <div id="fb-root"></div><!-- required by facebook -->
+  <%= link_to 'Share on Facebook', '#', :class => "fb_share"  %>
+  <%= facebook_share_once %>
+</div>
+</div>
+<div styles="clear:both;"></div>
+

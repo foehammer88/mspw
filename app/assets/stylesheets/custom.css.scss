@@ -274,3 +274,24 @@ width :200px;
 
 }
 
+.floater {
+  margin-top:20px;
+  float:left;
+  width:33%;
+  height:200px;
+  border: 1px solid #000011;
+}
+
+.floater h3 {
+  text-align:center;
+  margin-bottom:20px;
+}
+
+.floater p {
+  padding:0 20px;
+}
+
+.fb_share {
+  text-align: center;
+  text-decoration:bold;
+}

@@ -7,7 +7,7 @@
           <li><%= link_to "Home", root_path %></li>
           <li><%= link_to "Donate", donate_path %></li>
           <% if signed_in? %>
-            <li><%= link_to "Newsroom", '#' %></li>
+            <li><%= link_to "Newsroom", newsroom_path %></li>
             <li><%= link_to "Explore", '#' %></li>
             <li><%= link_to "Appointment", calendar_path %></li>
             <li id="fat-menu" class="dropdown">

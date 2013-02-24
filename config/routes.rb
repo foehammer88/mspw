@@ -1,4 +1,6 @@
 Myspiderweb::Application.routes.draw do
+  get "static_pages/newsroom"
+
   resources :events
 
   match '/calendar(/:year(/:month))' => 'calendar#index', :as => :calendar, :constraints => {:year => /\d{4}/, :month => /\d{1,2}/}
@@ -13,6 +15,7 @@ Myspiderweb::Application.routes.draw do
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/event',   to: 'events#new'
   match '/contact',    to: 'static_pages#contact'
+  match '/newsroom',    to: 'static_pages#newsroom'
   match '/about',    to: 'static_pages#about'
   match '/calendar',   to: 'calendar#index'  
   match '/donate',    to: 'static_pages#donate'

@@ -274,7 +274,6 @@ width :200px;
 
 }
 
-<<<<<<< HEAD
 .floater {
   margin-top:20px;
   float:left;
@@ -295,7 +294,7 @@ width :200px;
 .fb_share {
   text-align: center;
   text-decoration:bold;
-=======
+
 .right_half {
 float :left;
 border-left-style:solid;
@@ -312,15 +311,7 @@ height: 140px ;
 
 .center hero-unit {
   overflow:hidden;
->>>>>>> 7dd183219f81a01e8f63b5ada968b41a755dd4ce
 }
-
-input, textarea, select,  {
-border: 1px solid #bbbbbb;
-width: 100%;
-padding:0px !important;
-margin-bottom: 15px;
--moz-box-sizing: border-box;
--webkit-box-sizing: border-box;
-box-sizing: border-box;
+select {
+  padding:0px;
 }

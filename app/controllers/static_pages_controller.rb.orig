@@ -1,0 +1,22 @@
+class StaticPagesController < ApplicationController
+  def home
+  end
+
+  def donate
+  end
+
+  def about
+  end
+
+  def contact
+  end
+
+<<<<<<< HEAD
+  def newsroom
+  end
+=======
+  def explore
+  end
+
+>>>>>>> 7dd183219f81a01e8f63b5ada968b41a755dd4ce
+end

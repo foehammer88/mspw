@@ -1,13 +1,10 @@
 class UsersController < ApplicationController
+  before_filter :signed_in_user, only: [:index, :edit, :update]
+
   # GET /users
   # GET /users.json
   def index
-    @users = User.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @users }
-    end
+    @users = User.paginate(page: params[:page])
   end
 
   # GET /users/1
@@ -44,11 +41,12 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
-	 flash[:success] = "Successfully registered!"
-	redirect_to @user
+	sign_in @user
+	flash[:success] = "Successfully registered!"
+	redirect_back_or @user
         format.json { render json: @user, status: :created, location: @user }
       else
-        format.html { render action: "new" }
+	render 'new'
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

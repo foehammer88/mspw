@@ -10,7 +10,7 @@ gem 'bcrypt-ruby', '3.0.1'
 gem 'sqlite3'
 
 #gem 'couchdb', "~> 0.2.2"
-gem 'gcal4ruby', '~> 0.2.2'
+gem 'appointments'
 
 # Gems used only for assets and not required
 # in production environments by default.

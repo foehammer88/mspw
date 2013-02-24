@@ -314,3 +314,13 @@ height: 140px ;
   overflow:hidden;
 >>>>>>> 7dd183219f81a01e8f63b5ada968b41a755dd4ce
 }
+
+input, textarea, select,  {
+border: 1px solid #bbbbbb;
+width: 100%;
+padding:0px !important;
+margin-bottom: 15px;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
